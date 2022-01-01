@@ -72,6 +72,7 @@ export function NewTransactionsModal({ isOpen, onRequestClose }: newTransactions
                         type="button" 
                         onClick={()=> { setType('deposit')}}
 
+                        // eslint-disable-next-line eqeqeq
                         isActive={type == 'deposit'}
                         activeColors = 'green'
                     
@@ -83,6 +84,7 @@ export function NewTransactionsModal({ isOpen, onRequestClose }: newTransactions
                     <RadioBox 
                         type="button" 
                         onClick={()=> { setType('withdraw')}}
+                        // eslint-disable-next-line eqeqeq
                         isActive={type == 'withdraw'}
                         activeColors = 'red'
 
